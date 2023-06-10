@@ -1,0 +1,31 @@
+Libraries:
+
+
+List of libraries:
+        1) Jest
+        2) Cypress
+        3) Mocha
+        4) React-Testing libraries
+        5) Selenium 
+        6) Chai
+        7) Enzyme
+
+
+->  Jest (Unit Testing); 
+        1) Jest is popular JS testing library which, I have personally used for
+        writing unit tests.
+        2) It is easier to understand implement and documentation is very good and
+        community is also large.
+        3) Very fast to execute functionalities.
+
+->  Cypress (Automation Testing):
+        1) Cypress is mostly used for automated functionality testing. I have written
+           tests for testing the whole login flow of application.
+        2) It also has support for Unit and Integration testing.
+        3) It has end-to-end testing support and with Cypress Tester can perform Test-Driven
+           Development. 
+        4) Cypress executes commands in real-time giving visual feedback that is also one adva-
+           ntage of Cypress.
+        5) Cypress Automatically waits for commands and assertions.
+
+  

@@ -1,0 +1,31 @@
+User Registration:
+
+-> User Interface:
+        1) Create a registration form which includes input fields namely 
+           User Email, Full Name, Username, Password, Confirm Password.
+        2) We can make use of component libraries like Material UI or 
+           Chakra UI, but would prefer to use SCSS as Material UI component 
+           libraries increase the bundle size.
+
+-> Validation:
+        Implement validation for all the fields.
+        1) Email -> Valid Email format  
+        2) Full Name -> Should only have alphabets and exclude every other 
+                        character or symbol.
+        3) Username -> Username should be tested for uniqueness
+        4) Password -> Password should be strong and have minimum 8 characters
+                       and should have characters, numbers and atleast one symbol.
+        5) Confirm Password -> Confirm password should have validation check and 
+                               will be valid if and only if it matches the Password
+                               field 
+
+-> Backend API: 
+        1) Implementation of backend api for Registering and Storing data securely.
+        2) Making use of PostgreSQL database for storing. Database should be choosed 
+           according to use case.
+        3) Storing password in hashed format for security purpose and also adding salt
+           to it.
+
+-> Email Verification:
+        1) Generating a unique verification token and send it to it user's provided 
+           email address.

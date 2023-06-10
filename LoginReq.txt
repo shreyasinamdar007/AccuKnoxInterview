@@ -1,0 +1,23 @@
+Login:
+
+-> User Interface:
+        -> Create a registration form which includes input fields namely 
+           User Email, Password and 2-Factor-Authentication.
+
+-> Validation:
+        -> Implement validation to validate the input methods and save the 
+           credentials to database.
+
+-> Two-Factor Authentication: 
+        -> Prompt the user for the TOTP code during login if the user has 
+           enabled it in User Settings.
+
+-> Session Management:
+        -> Create a session for the authenticated user and store session 
+           data (e.g., user ID, expiration time) either in the server's memory
+           or a session store.
+
+-> Secure Communication: 
+        -> Use HTTPS protocol to ensure secure transmission of sensitive data
+           during login.
+                

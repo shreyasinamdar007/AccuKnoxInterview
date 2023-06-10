@@ -1,0 +1,174 @@
+Registration Page Test Cases: (Jest Unit Test cases)
+
+-> Presence of Required Fields:
+        -> Verify that the registration page contains the following required fields:
+           username, email, password, confirm password, and any other necessary fields.
+        -> Ensure that these fields are present in the HTML form structure.
+
+-> Successful User Registration:
+        -> Enter valid values for all required fields and submit the registration form.
+        -> Verify that the user is successfully registered and can log in to the application
+           using the provided credentials.
+        Eg. 
+        // function registerUser(username, email, password) { //Logic of registration page }
+        // describe('registerUser', () => {
+        // it('registers a user with valid input', () => {    
+        //  const username = 'testuser';
+        //  const email = 'test@example.com';
+        //  const password = 'password';
+        //
+        //  const result = registerUser(username, email, password);
+        //
+        //  expect(result).toEqual(expect.objectContaining({
+        //      success: true,
+        //      message: 'User registered successfully',
+        //    }));
+        // });
+
+-> Error Message for Existing Username:
+        ->  Attempt to register with a username that already exists in the system.
+        ->  Verify that an appropriate error message is displayed indicating that the username
+            is already taken.
+        Eg. 
+        // function registerUser(username, email, password) { //Logic of registration page }
+        // describe('registerUser', () => {
+        // it('registers a user with valid input', () => {    
+        //  const username = 'testuser';
+        //  const email = 'test@example.com';
+        //  const password = 'password';
+        //
+        //  const result = registerUser(username, email, password);
+        //
+        //  expect(result).not.toEqual(expect.objectContaining({
+        //      success: false,
+        //      message: 'User name already registered',
+        //    }));
+        // });
+
+-> Marking of Required Fields:
+        ->  Check that all required fields are visually marked with an asterisk (*) symbol in 
+            the UI.
+        ->  Inspect the HTML code or CSS styles to confirm the presence of this marker.
+
+-> Usage of UI Components:
+        ->  Ensure that the registration page incorporates suitable UI components like 
+            dropdowns, radio buttons, checkboxes, etc., wherever applicable, instead of just 
+            text boxes.
+        ->  Validate that these UI components are utilized for relevant fields.
+
+-> Submit and Cancel/Reset Buttons:
+        ->  Verify that the registration page includes both a submit button and a cancel/reset 
+            button at the end.
+            Interact with the buttons and confirm their functionality.
+
+-> Submitting Valid Data:
+        ->  Enter valid values for all required fields and click the submit button.
+        ->  Confirm that the entered data is sent to the server for processing.
+
+-> Cancel/Reset Functionality:
+        -> Enter valid values for all required fields and click the cancel/reset button.
+        -> Check that the submission request is canceled, and all the fields are reset to 
+           their initial state.
+
+-> Validation Error for Missing Mandatory Fields:
+        ->  Leave the mandatory fields empty and click the submit button.
+        ->  Verify that a validation error is displayed, indicating that the required fields
+            must be filled.
+
+-> Optional Fields and Validation:
+        ->  Leave the optional fields blank and click the submit button.
+        ->  Confirm that no validation error occurs and the registration is successful.
+
+-> Client-Side Validation:
+        ->  Test the client-side validation by attempting to submit the form without entering
+            a username and password.
+        ->  Validate that the client-side validation triggers and displays appropriate error 
+            messages without sending blank entries to the server.
+
+-> Upper Limit of Textbox Fields:
+        -> Enter text exceeding the allowed maximum length for each textbox field.
+        -> Verify that the input is truncated or not accepted based on the defined upper limit.
+
+-> Validation for Date and Email Fields:
+        -> Enter invalid dates (e.g., in the wrong format or out of range) and invalid email addresses.
+        -> Check that the system rejects these inputs and displays validation errors.
+
+-> Validation on Numeric Fields:
+        -> Enter alphabets and special characters in numeric fields.
+        -> Ensure that the system rejects these inputs and displays validation errors.
+
+-> Trimming of Leading and Trailing Spaces:
+        -> Enter values with leading and trailing spaces in various fields.
+        -> Confirm that the system trims these spaces before storing the data on the server.
+
+
+
+
+Login Page Test Cases: 
+    
+
+-> UI Test:
+    -> Presence of Labels and Controls:
+        -> Inspect the Login page and verify that all labels, controls, text boxes, buttons,
+           and links are present.
+        -> Check the HTML code or UI framework used to ensure the existence of these elements.
+
+    -> Visibility of Labels and Text:
+        -> Check that the font type and size of the labels and the text on different elements
+           are clearly visible.
+        -> Ensure that the text has sufficient contrast with the background and is readable.
+
+    -> Compliance with Design Specifications:
+        -> Compare the size, color, and UI of the different elements on the Login page with 
+           the specified design guidelines.
+        -> Validate that the elements match the defined specifications accurately.
+
+    -> Responsive UI:
+        -> Test the application's UI responsiveness by accessing the Login page on different
+           devices and screen resolutions.
+        -> Verify that the UI adjusts appropriately, ensuring a consistent user experience 
+           across various devices and screen sizes.
+
+    -> Media Queries and CSS:
+        -> Inspect the CSS code or media queries used in the application to confirm that they
+           handle different screen resolutions and devices effectively.
+        -> Test the Login page on various viewport sizes to ensure proper rendering and layout
+           adjustments.
+
+    -> Device-specific UI Elements:
+        -> Check if the Login page displays device-specific UI elements, such as virtual
+           keyboards on mobile devices or touch-friendly buttons.
+        -> Verify that these elements are available and function correctly on the respective
+           devices.
+
+    -> Testing with Browser DevTools:
+        -> Use browser development tools to simulate different screen resolutions and device 
+           types.
+        -> Inspect the Login page's layout and behavior in the simulated environments to ensure
+           responsiveness.
+
+    -> Cross-Browser Compatibility:
+        -> Test the Login page on different browsers (e.g., Chrome, Firefox, Safari, Edge) to 
+           check for any rendering issues or inconsistencies.
+        -> Verify that the UI remains consistent and functional across the supported browsers.
+
+    -> Accessibility Considerations:
+        -> Evaluate the Login page for accessibility compliance, ensuring that it meets WCAG 
+           (Web Content Accessibility Guidelines) standards.
+        -> Verify that elements have appropriate aria-labels, alt text, and proper semantic structure to support assistive technologies.
+
+    -> Localization Support:
+        -> If the application supports multiple languages, verify that the Login page elements,
+           including labels and controls, are properly localized.
+        -> Change the language settings and confirm that the UI elements adapt to the selected
+           language.
+
+    -> Cross-Platform Testing:
+        -> Test the Login page on different operating systems (e.g., Windows, macOS, Linux) to 
+           ensure consistent behavior and appearance across platforms.
+
+    -> Automated Testing:
+        -> Utilize automated testing frameworks or tools to perform UI testing on the Login 
+           page.
+        -> Write test scripts to validate the presence, visibility, and attributes of labels, 
+           controls, and other UI elements.

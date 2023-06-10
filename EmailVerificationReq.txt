@@ -1,0 +1,18 @@
+Email Verification Service:
+
+-> Email Service:
+        1) Integration of email service providers to send emails from your applications.
+           Ex: MailChimp, SendGrid, MailGun
+        2) Choose email service wisely also considering the pricing and other services 
+           provided.
+
+-> Email Template:
+        1) Design Email template which matches the UI and theme of your product or
+           service.
+        2) Use of similar color schemes that are used in the application is important.
+
+-> Verification Endpoint:
+        1) Create a API endpoint which handles email verification request. When user 
+           clicks on the email verification link he should be redirected to that endpoint
+        2) Verify the token at the endpoint and if verified succesfully mark it as verified
+           in database.

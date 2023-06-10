@@ -1,0 +1,19 @@
+Additional Consideration:
+
+Error Handling: 
+        -> Implementing error handling and validation so when there are issues in the
+           registration, verification and login.
+
+Security Measures:
+        -> Add proper sanitization to input fields so that we can protect the Hackers,
+           attacker from executing Server-Side Injection, Cross-Site Injections and
+           Cross Site Request Forgery.  
+        -> Add Rate limiting also can help avoiding attacks Denial Of Service and 
+           Distributed Denial of Service.
+
+Logging and Monitoring:
+        -> Logging and Monitoring should be implemented so we can get proper logs of 
+           any errors or suspicious activities that are done on the Website.
+
+Privacy: 
+        -> Compliance for data protection. Handling user data securely.

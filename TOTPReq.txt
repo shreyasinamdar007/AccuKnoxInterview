@@ -1,0 +1,16 @@
+Time-Based One-Time Password Regiteration:
+
+-> User Interface:
+        -> Add Section in Login to add 2-Factor Authentication. 
+        -> There are various libraries like Google Authenticator to generate OTP codes.
+
+-> QR Generation:
+        -> Generate a QR code contianing the secret key required for TOTP 
+           generation. 
+        -> Prompt the user to scan QR Code and entered the generated
+           code to complete the registration process.
+
+-> Verification:
+        -> Create API endpoint to verify and handle TOTP verification process. 
+        -> Store the TOTP secret key securely in the user's account settings.
+        
